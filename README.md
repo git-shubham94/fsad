@@ -2,7 +2,7 @@
 
 A modern frontend web application built with **React + Vite** that allows students to showcase their extracurricular achievements beyond academics, while administrators manage and monitor records efficiently.
 
-This platform focuses on clean UI, real-time interaction using mock data, and scalable component-based architecture.
+This platform focuses on clean UI, real-time interaction using mock data for now, and scalable component-based architecture.
 
 ---
 
