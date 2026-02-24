@@ -87,10 +87,15 @@ fsad/
 
 ### 1️⃣ Clone the repository
 git clone https://github.com/git-shubham94/fsad
+
 cd fsad
+
 2️⃣ Install dependencies
+
 npm install
+
 3️⃣ Run the development server
+
 npm run dev
 ---
 ## 🔮 Future Enhancements
