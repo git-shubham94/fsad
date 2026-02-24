@@ -1,9 +1,9 @@
 .custom-btn {
   position: relative;
   overflow: hidden;
-  padding: 12px 24px;
+  padding: 12px 26px;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -12,6 +12,7 @@
   align-items: center;
   gap: 8px;
   justify-content: center;
+  letter-spacing: 0.5px;
 }
 
 .custom-btn:disabled {
@@ -27,62 +28,59 @@
   font-size: 18px;
 }
 
-/* Primary Button */
+/* ===== PRIMARY (Neon Accent) ===== */
 .custom-btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  background: linear-gradient(135deg, var(--accent), #ffd700);
+  color: #000;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
 }
 
 .custom-btn-primary:hover:not(:disabled) {
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
 }
 
-/* Secondary Button */
+/* ===== SECONDARY (Outline Neon) ===== */
 .custom-btn-secondary {
-  background: white;
-  color: #667eea;
-  border: 2px solid #667eea;
+  background: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 10px var(--secondary-glow);
 }
 
 .custom-btn-secondary:hover:not(:disabled) {
-  background: #667eea;
-  color: white;
+  background: var(--secondary);
+  color: #000;
+  box-shadow: 0 0 25px var(--secondary-glow);
 }
 
-/* Danger Button */
+/* ===== DANGER ===== */
 .custom-btn-danger {
-  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  background: linear-gradient(135deg, #ff4d4d, #cc0000);
   color: white;
-  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
 }
 
 .custom-btn-danger:hover:not(:disabled) {
-  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(255, 77, 77, 0.6);
 }
 
-/* Success Button */
+/* ===== SUCCESS (NOT GREEN ANYMORE — GOLD THEME) ===== */
 .custom-btn-success {
-  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+  background: linear-gradient(135deg, var(--accent), #ffd700);
+  color: #000;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
 .custom-btn-success:hover:not(:disabled) {
-  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
 }
 
 /* Dark Mode */
 body.dark-mode .custom-btn-secondary {
-  background: rgba(30, 41, 59, 0.8);
-  color: #a5b4fc;
-  border-color: #667eea;
-}
-
-body.dark-mode .custom-btn-secondary:hover:not(:disabled) {
-  background: #667eea;
-  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--secondary);
+  border-color: var(--secondary);
 }

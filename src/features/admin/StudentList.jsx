@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAppContext } from '../../context/AppContext';
+import './StudentList.css';
 
 const StudentList = () => {
   const { students, achievementList, participationList } = useAppContext();

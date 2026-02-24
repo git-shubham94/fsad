@@ -13,31 +13,59 @@ const ParticleBackground = () => {
       init={particlesInit}
       options={{
         background: {
-          color: { value: 'transparent' },
+          color: { value: "transparent" }
         },
         fpsLimit: 120,
+
         particles: {
-          color: { value: '#ffffff' },
-          links: {
-            color: '#ffffff',
-            distance: 150,
-            enable: true,
-            opacity: 0.3,
-            width: 1,
+          number: {
+            value: 55,
+            density: { enable: true, area: 900 }
           },
+
+          color: {
+            value: ["#ffffff", "#00f7ff", "#ffd700"] // white + neon + gold
+          },
+
+          shape: {
+            type: "circle"
+          },
+
+          opacity: {
+            value: 0.4,
+            random: true
+          },
+
+          size: {
+            value: { min: 1, max: 4 }
+          },
+
           move: {
             enable: true,
-            speed: 1,
+            speed: 0.6,
+            direction: "none",
+            outModes: "out"
           },
-          number: {
-            density: { enable: true, area: 800 },
-            value: 40,
-          },
-          opacity: { value: 0.3 },
-          shape: { type: 'circle' },
-          size: { value: { min: 1, max: 3 } },
+
+          links: {
+            enable: true,
+            distance: 170,
+            color: "#00f7ff",
+            opacity: 0.15,
+            width: 1
+          }
         },
-        detectRetina: true,
+
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" }
+          },
+          modes: {
+            repulse: { distance: 120 }
+          }
+        },
+
+        detectRetina: true
       }}
       style={{
         position: 'absolute',
@@ -45,7 +73,7 @@ const ParticleBackground = () => {
         height: '100%',
         top: 0,
         left: 0,
-        zIndex: -1,
+        zIndex: -1
       }}
     />
   );

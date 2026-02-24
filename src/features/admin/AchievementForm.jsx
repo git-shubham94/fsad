@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAppContext } from '../../context/AppContext';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import '../../styles/Button.css';
 
 const AchievementForm = () => {
   const { students, addAchievement, activityCategories } = useAppContext();
@@ -139,9 +140,12 @@ const AchievementForm = () => {
             />
           </div>
 
-          <button type="submit" className="submit-btn">
-            ✅ Add Achievement
-          </button>
+         <button
+  type="submit"
+  className="custom-btn custom-btn-primary full-width"
+>
+  Add Achievement
+</button>
         </form>
       </div>
     </>

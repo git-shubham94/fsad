@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../styles/Home.css';
+import trophy from '../assets/trophy.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -42,14 +43,13 @@ const Home = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <motion.div
-          className="trophy-animation"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          🏆
-        </motion.div>
+        <motion.div className="trophy-animation">
+  <img 
+    src={trophy} 
+    alt="Achievement Trophy" 
+    className="trophy-img"
+  />
+</motion.div>
 
         <motion.h1
           initial={{ y: 30, opacity: 0 }}

@@ -1,0 +1,107 @@
+.student-list-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+/* Header */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.list-header h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+/* SEARCH INPUT (THE FIX) */
+.search-input {
+  min-width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.search-input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.search-input:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 15px var(--secondary-glow);
+}
+
+/* Table */
+.table-wrapper {
+  overflow-x: auto;
+  background: rgba(0,0,0,0.6);
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  backdrop-filter: blur(12px);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.student-table thead {
+  background: rgba(255,255,255,0.04);
+}
+
+.student-table th,
+.student-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.student-table tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Badges */
+.dept-badge {
+  background: rgba(0, 247, 255, 0.15);
+  color: var(--secondary);
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  border: 1px solid var(--secondary);
+}
+
+.count-badge {
+  background: rgba(255, 215, 0, 0.15);
+  color: var(--accent);
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  border: 1px solid var(--accent);
+}
+
+/* No Data */
+.no-data {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-input {
+    width: 100%;
+    min-width: unset;
+  }
+}
