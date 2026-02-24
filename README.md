@@ -97,6 +97,7 @@ npm install
 3️⃣ Run the development server
 
 npm run dev
+
 ---
 ## 🔮 Future Enhancements
 Backend integration 
