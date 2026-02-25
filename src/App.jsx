@@ -46,7 +46,7 @@ function App() {
       <div className="app-container">
         <ParticleBackground />
         <Navbar />
-        <main style={{ paddingTop: '80px', minHeight: '100vh', position: 'relative', zIndex: 1 }}>
+        <main style={{ paddingTop: '40px', minHeight: '100vh', position: 'relative', zIndex: 1 }}>
           <AnimatedRoutes />
         </main>
       </div>
