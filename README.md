@@ -100,9 +100,13 @@ npm run dev
 
 ---
 ## 🔮 Future Enhancements
+
 Backend integration 
+
 Authentication & role-based authorization
+
 Admin analytics dashboard
+
 Public student portfolios
 
 
